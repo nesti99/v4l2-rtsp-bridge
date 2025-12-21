@@ -5,6 +5,7 @@ cd ProCaptureForLinux_1.3.4418
 ./install.sh
 cd /
 gh repo clone nesti99/v4l2-rtsp-bridge
+cd v4l2-rtsp-bridge
 tar zxvf rtsp.tgz -C /
 systemctl daemon-reload
 systemctl enable rtsp-streamer
