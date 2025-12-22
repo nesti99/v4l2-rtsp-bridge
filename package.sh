@@ -1,4 +1,4 @@
-apt update && apt upgrade && apt install ffmpeg python3 python3-pip v4l-utils intel-media-va-driver -y
+apt update && apt upgrade -y && apt install ffmpeg python3 python3-pip v4l-utils intel-media-va-driver -y
 wget https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz
 tar xzvf ProCaptureForLinux_1.3.4418.tar.gz
 cd ProCaptureForLinux_1.3.4418
