@@ -4,7 +4,7 @@ tar xzvf ProCaptureForLinux_1.3.4418.tar.gz
 cd ProCaptureForLinux_1.3.4418
 ./install.sh
 cd /
-gh repo clone nesti99/v4l2-rtsp-bridge
+git clone https://github.com/nesti99/v4l2-rtsp-bridge.git
 cd v4l2-rtsp-bridge
 tar zxvf rtsp.tgz -C /
 systemctl daemon-reload
