@@ -66,7 +66,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable rtsp-streamer
 sudo systemctl start rtsp-streamer
 ```
-Usage
+**Usage**
 Once the service is active, the RTSP streams are available at the following addresses:
 
 rtsp://<HOST_IP>:8554/ch0
@@ -79,11 +79,13 @@ rtsp://<HOST_IP>:8554/ch3
 
 Each channel corresponds to a physical HDMI input on the ProCapture card.
 
-Testing with VLC
+**Testing with VLC**
 You can quickly test the stream by running:
 
 vlc rtsp://<HOST_IP>:8554/ch0
-Video Encoding Configuration
+
+**Video Encoding Configuration**
+
 The system currently uses the following streaming parameters:
 
 Video Codec: H.264
