@@ -41,24 +41,26 @@ sudo apt install -y \
   v4l-utils \
   intel-media-va-driver \
   linux-headers-5.10.0-37-amd64 \
+  sudo \
   git
-2. Install Magewell ProCapture Drivers
-Download and install the official Magewell Linux drivers:
+
+# 2. Install Magewell ProCapture Drivers
+# Download and install the official Magewell Linux drivers:
 
 wget [https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz](https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz)
 tar xzvf ProCaptureForLinux_1.3.4418.tar.gz
 cd ProCaptureForLinux_1.3.4418
 sudo ./install.sh
-[!IMPORTANT] A system reboot is strongly recommended after the driver installation is complete.
+# [!IMPORTANT] A system reboot is strongly recommended after the driver installation is complete.
 
-3. Install v4l2-rtsp-bridge
-Clone the repository and install the RTSP service files:
+# 3. Install v4l2-rtsp-bridge
+# Clone the repository and install the RTSP service files:
 
 cd /
-sudo git clone [https://github.com/nesti99/v4l2-rtsp-bridge.git](https://github.com/nesti99/v4l2-rtsp-bridge.git)
+sudo git clone https://github.com/nesti99/v4l2-rtsp-bridge.git
 cd v4l2-rtsp-bridge
 sudo tar zxvf rtsp.tgz -C /
-Reload systemd and enable the service:
+# Reload systemd and enable the service:
 
 sudo systemctl daemon-reload
 sudo systemctl enable rtsp-streamer
@@ -79,8 +81,6 @@ Each channel corresponds to a physical HDMI input on the ProCapture card.
 
 Testing with VLC
 You can quickly test the stream by running:
-
-Bash
 
 vlc rtsp://<HOST_IP>:8554/ch0
 Video Encoding Configuration
@@ -117,10 +117,3 @@ Roadmap / Future Work
 ⚙️ Dynamic Configuration: Support for YAML/JSON files to adjust bitrate and resolution.
 
 🔐 Security: Add RTSP authentication support.
-
-Notes
-Designed specifically for broadcast and industrial environments.
-
-Ensure FFmpeg is built with the required codec support.
-
-Performance is heavily dependent on CPU capabilities when using software encoding.
