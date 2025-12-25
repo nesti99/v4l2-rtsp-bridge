@@ -110,6 +110,7 @@ View real-time logs:
 journalctl -u rtsp-streamer -f
 ```
 Roadmap / Future Work
+
 🚀 Hardware Acceleration: Implement support for Intel VAAPI and NVIDIA NVENC/CUDA.
 
 🌐 Web Interface: Add a live dashboard for input previews and stream management.
