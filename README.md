@@ -97,16 +97,17 @@ Output Protocol: RTSP
 Service Management (systemd)
 The service is registered as rtsp-streamer.service. Use the following commands to manage it:
 
-Check service status:
+
 
 ```Bash
-
+Check service status:
 systemctl status rtsp-streamer
+
+
 Restart the service:
-
 systemctl restart rtsp-streamer
-View real-time logs:
 
+View real-time logs:
 journalctl -u rtsp-streamer -f
 ```
 Roadmap / Future Work
