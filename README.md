@@ -34,38 +34,11 @@ Update your system and install the required packages:
 
 ```bash
 apt update && sudo apt upgrade -y
-apt install -y \
-  ffmpeg \
-  python3 \
-  python3-pip \
-  v4l-utils \
-  intel-media-va-driver \
-  linux-headers-$(uname -r) \
-  sudo \
-  alsa-utils \
-  git
-
-# 2. Install Magewell ProCapture Drivers
-# Download and install the official Magewell Linux drivers:
-
-wget https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz
-tar xzvf ProCaptureForLinux_1.3.4418.tar.gz
-cd ProCaptureForLinux_1.3.4418
-sudo ./install.sh
-# [!IMPORTANT] A system reboot is strongly recommended after the driver installation is complete.
-
-# 3. Install v4l2-rtsp-bridge
-# Clone the repository and install the RTSP service files:
-
-cd /
+apt install -y git
 sudo git clone https://github.com/nesti99/v4l2-rtsp-bridge.git
 cd v4l2-rtsp-bridge
-sudo tar zxvf rtsp.tgz -C /
-# Reload systemd and enable the service:
-
-sudo systemctl daemon-reload
-sudo systemctl enable rtsp-streamer
-sudo systemctl start rtsp-streamer
+chmod .x install.sh
+./install.sh
 ```
 **Usage**
 Once the service is active, the RTSP streams are available at the following addresses:
@@ -114,8 +87,6 @@ View real-time logs:
 journalctl -u rtsp-streamer -f
 ```
 Roadmap / Future Work
-
-🚀 Hardware Acceleration: Implement support for Intel VAAPI and NVIDIA NVENC/CUDA.
 
 🌐 Web Interface: Add a live dashboard for input previews and stream management.
 
