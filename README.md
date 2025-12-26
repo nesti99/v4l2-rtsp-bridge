@@ -42,6 +42,7 @@ apt install -y \
   intel-media-va-driver \
   linux-headers-$(uname -r) \
   sudo \
+  alsa-utils \
   git
 
 # 2. Install Magewell ProCapture Drivers
