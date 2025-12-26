@@ -39,6 +39,8 @@ sudo git clone https://github.com/nesti99/v4l2-rtsp-bridge.git
 cd v4l2-rtsp-bridge
 chmod +x install.sh
 ./install.sh
+# If you choose the NVIDIA encoder, please install the NVIDIA driver.
+# You can select the video encoder during installation.
 ```
 **Usage**
 Once the service is active, the RTSP streams are available at the following addresses:
@@ -64,7 +66,7 @@ The system currently uses the following streaming parameters:
 
 Video Codec: H.264
 
-Encoder: CPU (libx264)
+Encoder: CPU (libx264) / Vaapi / NVIDIA
 
 Input Source: V4L2
 
