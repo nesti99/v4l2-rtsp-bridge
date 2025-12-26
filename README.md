@@ -33,8 +33,8 @@ The project is optimized for **headless servers** and runs as a system service m
 Update your system and install the required packages:
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y \
+apt update && sudo apt upgrade -y
+apt install -y \
   ffmpeg \
   python3 \
   python3-pip \
