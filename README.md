@@ -40,7 +40,7 @@ apt install -y \
   python3-pip \
   v4l-utils \
   intel-media-va-driver \
-  linux-headers-5.10.0-37-amd64 \
+  apt install -y linux-headers-$(uname -r) \
   sudo \
   git
 
