@@ -47,7 +47,7 @@ apt install -y \
 # 2. Install Magewell ProCapture Drivers
 # Download and install the official Magewell Linux drivers:
 
-wget [https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz](https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz)
+wget https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz
 tar xzvf ProCaptureForLinux_1.3.4418.tar.gz
 cd ProCaptureForLinux_1.3.4418
 sudo ./install.sh
