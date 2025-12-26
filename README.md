@@ -34,7 +34,7 @@ Update your system and install the required packages:
 
 ```bash
 apt update && sudo apt upgrade -y
-apt install -y git
+apt install -y git sudo
 sudo git clone https://github.com/nesti99/v4l2-rtsp-bridge.git
 cd v4l2-rtsp-bridge
 chmod +x install.sh
