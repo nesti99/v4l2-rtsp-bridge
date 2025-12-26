@@ -23,7 +23,6 @@ apt install -y \
   linux-headers-$(uname -r) \
   sudo \
   alsa-utils \
-  git \
   wget
 
 # --------------------------------------
@@ -32,7 +31,7 @@ apt install -y \
 echo
 echo "➡️  Installazione driver Magewell ProCapture..."
 
-cd /tmp
+
 wget -q https://www.magewell.com/files/drivers/ProCaptureForLinux_1.3.4418.tar.gz
 tar xzf ProCaptureForLinux_1.3.4418.tar.gz
 cd ProCaptureForLinux_1.3.4418
