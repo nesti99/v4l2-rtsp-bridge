@@ -11,7 +11,6 @@ The project is optimized for **headless servers** and runs as a system service m
 * **4-Channel Support:** Specifically designed for Magewell ProCapture Quad cards.
 * **Independent RTSP Streams:** A dedicated stream for each physical HDMI input.
 * **FFmpeg-based:** Reliable, versatile, and widely compatible.
-* **CPU Video Encoding:** Software-based stream processing (libx264).
 * **Automatic Startup:** Fully integrated as a `systemd` service.
 * **Headless Design:** Operates without a graphical interface or local monitor.
 
