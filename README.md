@@ -37,7 +37,7 @@ apt update && sudo apt upgrade -y
 apt install -y git
 sudo git clone https://github.com/nesti99/v4l2-rtsp-bridge.git
 cd v4l2-rtsp-bridge
-chmod .x install.sh
+chmod +x install.sh
 ./install.sh
 ```
 **Usage**
